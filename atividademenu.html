@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8" />
+
+  <style>
+
+  .menu .drop{
+    overflow: hidden;
+  }
+
+  .bg{
+    background-image: url("https://get.pxhere.com/photo/landscape-nature-path-outdoor-rock-mountain-cloud-sky-warm-morning-travel-sign-rural-scenic-flight-park-rugged-signage-birds-arrow-decision-mountains-directions-lost-public-signpost-signboard-crossroad-discover-area-found-guide-searching-pointing-lost-and-found-self-improvement-directing-540344.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+
+  body{
+    margin: 0;
+    height: 100%;
+  }
+
+  html{
+    height: 100%;
+  }
+
+  .menu{
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu a{
+    text-align: center;
+    padding: 15px 50px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .menu li a{
+    text-align: center;
+    padding: 15px 50px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .menu a:visited{
+    text-decoration: none;
+    color: #fff
+  }
+
+  .menu a:hover{
+    text-decoration: none;
+    background-color: #002db3;
+  }
+
+  .menu li{
+    background-color: #3366ff;
+    border-style: solid;
+    display: inline;
+    border-width: 1px;
+    font-size: 20px;
+    overflow: hidden;
+    float: left;
+    line-height: 50px;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  .menu ul{
+    overflow: hidden;
+    margin: 2px auto;
+    line-height: 1.4;
+    padding-left: 0;
+    justify-content: center;
+    display: flex;
+  }
+
+  .bg h1, h3{
+    margin-top: 3px;
+    margin-bottom: 5px;
+  }
+
+  .drop ul{
+    background-color: initial;
+    padding: 0px;
+    margin-left: -53px;
+    margin-top: 1.5px;
+    overflow: hidden;
+  }
+
+  .drop li{
+  }
+
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: -30px;
+  }
+
+  .dropdown-content li{
+    background-color: #003d66;
+    border-style: solid;
+    display: block;
+    border-width: 1px;
+    font-size: 20px;
+    float: none;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    display: none;
+  }
+
+  .dropdown-content ul{
+    background-color: black;
+    padding: 0px;
+  }
+
+  .dropdown-content a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+  }
+  .dropdown-content li a{
+    text-align: center;
+    padding: 15px 50px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .dropdown-content a:visited{
+    text-decoration: none;
+    color: #fff
+  }
+
+  .dropdown-content a:hover{
+    text-decoration: none;
+    background-color: #001f33;
+  }
+
+  .drop:hover .dropdown-content{
+    display: block;
+  }
+
+  .drop:hover .dropdown-content li{
+    display: block;
+  }
+
+
+
+</style>
+</head>
+<body>
+  <div class="bg">
+    <br />
+    <center><h1>Atividade - Menu com dropdown</h1></center>
+    <center><h3>Lucas Teixeira - 519172018</h3></center>
+    <br />
+    <center><h3>Ir para o seu site de busca predileto</h3></center>
+    <div class="menu">
+      <ul>
+        <li><a href="http://www.bing.com.br">Bing</a></li>
+        <li><a href="http://www.google.com.br">Google</a></li>
+        <li><a href="https://br.yahoo.com/">Yahoo</a></li>
+        <li><a href="https://busca.uol.com.br/">Uol</a></li>
+        <li><a href="https://www.aol.com/">Aol</a></li>
+        <div class="drop">
+          <li><a href="#">Baidu</a>
+          <ul class="dropdown-content">
+            <li>Está correto disto?</li>
+            <li><a href="http://www.baidu.com.br">Ir para o site</a></li>
+            <li style="margin-bottom: 0px;">Por sua conta e risco.</li>
+          </li>
+          </ul>
+        </div>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
